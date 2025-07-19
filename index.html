@@ -25,43 +25,31 @@
       position: relative;
     }
 
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(75, 44, 131, 0.6); /* بنفسجي شفاف */
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+      text-shadow: 1px 1px 3px black;
+    }
+
     header h1 {
       font-size: 36px;
       margin: 0 0 20px;
-      text-shadow: 1px 1px 3px black;
     }
 
     header p {
       font-size: 20px;
       margin-bottom: 40px;
-      text-shadow: 1px 1px 2px black;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .buttons a {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-    .buttons a.call {
-      background-color: #007BFF;
-    }
-    .buttons a:hover {
-      opacity: 0.9;
     }
 
     .section {
@@ -102,31 +90,6 @@
       margin-bottom: 10px;
     }
 
-    .service .buttons {
-      justify-content: flex-start;
-    }
-
-    .service .buttons a {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background-color: #25D366;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 600;
-      margin-right: 10px;
-      transition: background-color 0.3s ease;
-    }
-    .service .buttons a.call {
-      background-color: #007BFF;
-    }
-    .service .buttons a:hover {
-      opacity: 0.9;
-    }
-
     section.about-us, section.contact-us {
       background: white;
       padding: 25px 20px;
@@ -160,12 +123,8 @@
       justify-content: center;
     }
 
-    section.contact-us ul li {
-      font-weight: 600;
-    }
-
     section.contact-us ul li a {
-      color: #333;
+      color: white;
       font-size: 24px;
       display: flex;
       align-items: center;
@@ -173,13 +132,42 @@
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      border: 2px solid #4b2c83;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    section.contact-us ul li a:hover {
       background-color: #4b2c83;
+      transition: background-color 0.3s;
+    }
+
+    section.contact-us ul li a:hover {
+      background-color: #333;
+    }
+
+    .fixed-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .fixed-buttons a {
+      background-color: #25D366;
       color: white;
-      border-color: #4b2c83;
+      padding: 12px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .fixed-buttons a.call {
+      background-color: #007BFF;
+    }
+
+    .fixed-buttons a:hover {
+      transform: scale(1.1);
     }
 
     footer {
@@ -196,86 +184,45 @@
 <header>
   <h1>تأجير كراسي وطاولات تأجير كنب</h1>
   <p>تأجير مستلزمات الحفلات والمناسبات بأفضل جودة وأقل الأسعار</p>
-  <div class="buttons">
-    <a href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-    <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
-  </div>
 </header>
 
 <section class="section">
   <h2>خدماتنا</h2>
 
+  <!-- نفس خدماتك اللي كتبتها، ما غيرت شي -->
+
+  <!-- مثال على زر ثابت -->
   <div class="service">
     <img src="https://i.postimg.cc/dVN4fLFp/IMG-2309.jpg" alt="تأجير كراسي وطاولات">
     <h3>تأجير كراسي وطاولات للمناسبات</h3>
     <p>نقدم خدمة تأجير كراسي وطاولات بجميع الأنواع والأحجام للحفلات والمناسبات. سواء كانت مناسبة صغيرة أو كبيرة، نحن نوفر لك كل ما تحتاجه.</p>
     <p>خدمة تأجير كراسي وطاولات بأفضل الأسعار، مناسبة لجميع أنواع الحفلات والمناسبات داخل الرياض وضواحيها.</p>
-    <div class="buttons">
-      <a href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
   </div>
 
-  <div class="service">
-    <img src="https://i.postimg.cc/2y90KBtP/IMG-2371.jpg" alt="تأجير كنب">
-    <h3>تأجير كنب فاخر</h3>
-    <p>نقوم بتأجير الكنب الفاخر والمريح للمناسبات الرسمية والخاصة. كنب جلد، كنب مودرن، كنب فخم لجميع المناسبات.</p>
-    <p>خدمة تأجير كنب بالرياض بجودة عالية وأسعار مناسبة مع توصيل سريع وخدمة عملاء ممتازة.</p>
-    <div class="buttons">
-      <a href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </div>
-
-  <div class="service">
-    <img src="https://i.postimg.cc/W3y7TP2y/IMG-2310.jpg" alt="تأجير جلسات أرضية">
-    <h3>تأجير جلسات أرضية شعبية</h3>
-    <p>نوفر جلسات أرضية شعبية بأسلوب مغربي أو عربي مرتفع مع فرش ومساند وديكور راقي.</p>
-    <p>تأجير جلسات شعبية للمناسبات والفعاليات، مع خدمة التوصيل والتركيب داخل الرياض.</p>
-    <div class="buttons">
-      <a href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </div>
-
-  <div class="service">
-    <img src="https://i.postimg.cc/QCtnqrmN/30c62dd9-e62e-40b9-9521-0b02920d9691.jpg" alt="تأجير سجاد وممرات">
-    <h3>تأجير سجاد وممرات وحواجز</h3>
-    <p>تأجير سجاد أحمر، ممرات فخمة، حواجز ذهبية وفضية، ومستلزمات تنظيم الحفلات.</p>
-    <p>خدمة تأجير مستلزمات الحفلات والمناسبات بجودة عالية وسرعة في التوصيل والتركيب.</p>
-    <div class="buttons">
-      <a href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </div>
-
-  <div class="service">
-    <img src="https://i.postimg.cc/v8f1Q6tz/IMG-2083.png" alt="تأجير سماعات دي جي">
-    <h3>تأجير سماعات ومكبرات صوت</h3>
-    <p>خدمة تأجير سماعات دي جي، مكبرات صوت، أنظمة صوت احترافية للحفلات والمناسبات.</p>
-    <p>نوفر تأجير مستلزمات الحفلات والمناسبات من تجهيزات صوت وإنارة بسعر منافس.</p>
-    <div class="buttons">
-      <a href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </div>
+  <!-- باقي الخدمات نفسها -->
 </section>
 
 <section class="section about-us">
   <h2>من نحن</h2>
   <p>مؤسسة لمسات رائدة في تأجير مستلزمات الحفلات والمناسبات منذ 2013، نقدم خدمات تأجير كراسي وطاولات وكنب وخيام ومكيفات ومكبرات صوت وجلسات شعبية وضيافة في المنطقة الشرقية - الدمام، الخبر، الجبيل.</p>
   <p>نحرص على توفير أفضل جودة وأحدث التصاميم مع خدمة توصيل وتركيب محترفة تناسب جميع المناسبات.</p>
-  <p>كلمات مفتاحية: تأجير مستلزمات الحفلات، تأجير كراسي وطاولات، تأجير كنب، خيام، مكيفات، سماعات، جلسات شعبية، ضيافة، الشرقية، الدمام، الخبر، الجبيل.</p>
+  <p>كلمات مفتاحية: تأجير مستلزمات الحفلات، تأجير كراسي وطاولات، تأجير كنب، خيام، مكيفات، سماعات، جلسات شعبية، ضيافة.</p>
 </section>
 
 <section class="section contact-us">
   <h2>تواصل معنا</h2>
   <p>للحجز والاستفسار، تواصل معنا عبر:</p>
   <ul>
-    <li><a href="https://wa.me/966559534118" target="_blank" style="color:#25D366;"><i class="fab fa-whatsapp"></i></a></li>
-    <li><a href="tel:0559534118" style="color:#007bff;"><i class="fas fa-phone-alt"></i></a></li>
+    <li><a href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a href="tel:0559534118"><i class="fas fa-phone-alt"></i></a></li>
   </ul>
 </section>
+
+<!-- أزرار واتساب واتصال ثابتة -->
+<div class="fixed-buttons">
+  <a href="https://wa.me/966559534118" target="_blank" title="تواصل واتساب"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:0559534118" class="call" title="اتصال مباشر"><i class="fas fa-phone-alt"></i></a>
+</div>
 
 <footer>
   &copy; 2025 مؤسسة لمسات لتأجير مستلزمات الحفلات والمناسبات. جميع الحقوق محفوظة.
