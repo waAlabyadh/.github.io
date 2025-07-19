@@ -2,310 +2,147 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>لمسات | تأجير كراسي وطاولات، تأجير كنب، تأجير مستلزمات الحفلات</title>
-  <meta name="description" content="لمسات تقدم أفضل خدمات تأجير كراسي وطاولات، تأجير كنب، تأجير جلسات مغربية وشعبية، خيام، مكبرات صوت، ومستلزمات الحفلات والمناسبات في المنطقة الشرقية." />
-  <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, جلسات مغربية, جلسات شعبية, خيام, مكبرات صوت, مستلزمات حفلات, لمسات, الشرقية" />
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تأجير كراسي وطاولات وكنب | لمسات</title>
+  <meta name="description" content="لمسات لتأجير مستلزمات الحفلات - تأجير كراسي وطاولات وكنب وخيام ومكيفات وجلسات شعبية وسجاد وسماعات. أفضل الخدمات في الشرقية والدمام والخبر والجبيل.">
+  <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, تأجير خيام, تأجير جلسات, تأجير سجاد, تأجير مكيفات, تأجير سماعات, مستلزمات حفلات, لمسات الشرقية">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     body {
       margin: 0;
       font-family: 'Tajawal', sans-serif;
-      background: #fefefe;
-      color: #222;
-      line-height: 1.7;
+      background-color: #f4f4f4;
+      color: #333;
     }
     header {
-      background: rgba(0,0,0,0.7);
-      background-image: url('https://i.postimg.cc/kXBd7YGF/IMG-2564.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 50px 20px;
+      background: linear-gradient(to left, #7e57c2, #ab47bc);
+      color: white;
       text-align: center;
-      color: #fff;
-      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+      padding: 40px 20px;
     }
     header h1 {
-      font-size: 38px;
-      margin-bottom: 12px;
-      font-weight: 900;
+      font-size: 30px;
+      margin: 0;
     }
     header p {
-      font-size: 20px;
-      margin-bottom: 25px;
+      font-size: 18px;
+      margin-top: 10px;
     }
-    .contact-icons {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      margin-bottom: 10px;
-    }
-    .contact-icons a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      text-decoration: none;
-      color: white;
-      font-size: 24px;
-      transition: background-color 0.3s ease;
-    }
-    .contact-icons a.whatsapp {
-      background-color: #25D366;
-    }
-    .contact-icons a.whatsapp:hover {
-      background-color: #1ebe57;
-    }
-    .contact-icons a.call {
-      background-color: #007bff;
-    }
-    .contact-icons a.call:hover {
-      background-color: #0056b3;
-    }
-    section.services {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    section.services h2 {
-      text-align: center;
-      font-size: 32px;
-      color: #111;
-      margin-bottom: 35px;
-      font-weight: 700;
-    }
-    .service-item {
-      background: rgba(240, 240, 240, 0.8);
+    .service-section {
+      padding: 30px 20px;
+      background-color: #fff;
+      margin-bottom: 20px;
       border-radius: 10px;
-      padding: 25px 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
     }
-    .service-text {
-      flex: 1 1 400px;
-    }
-    .service-text h3 {
-      margin-top: 0;
-      font-size: 24px;
-      color: #222;
-    }
-    .service-text p {
-      font-size: 17px;
-      color: #444;
-      margin: 12px 0;
-    }
-    .service-text .keywords {
-      font-size: 14px;
-      color: #666;
-      font-style: italic;
-    }
-    .service-image {
-      flex: 0 0 280px;
-      max-width: 280px;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    }
-    .service-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .service-contact {
+    .service-section img {
+      max-width: 100%;
+      border-radius: 10px;
       margin-top: 15px;
-      display: flex;
-      gap: 15px;
     }
-    .service-contact a {
-      flex: 1;
-      text-align: center;
-      padding: 12px 0;
-      background: #222;
-      color: #fff;
-      font-weight: 700;
-      border-radius: 6px;
+    .contact-buttons {
+      margin-top: 15px;
+    }
+    .contact-buttons a {
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      margin-left: 10px;
+      font-size: 20px;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
     }
-    .service-contact a.whatsapp {
+    .whatsapp {
       background-color: #25D366;
     }
-    .service-contact a.whatsapp:hover {
-      background-color: #1ebe57;
-    }
-    .service-contact a.call {
+    .call {
       background-color: #007bff;
-    }
-    .service-contact a.call:hover {
-      background-color: #0056b3;
-    }
-    footer {
-      text-align: center;
-      padding: 25px 10px;
-      background-color: #111;
-      color: #bbb;
-      font-size: 14px;
-      margin-top: 60px;
-    }
-    @media (max-width: 700px) {
-      .service-item {
-        flex-direction: column;
-        text-align: center;
-      }
-      .service-image {
-        max-width: 100%;
-      }
-      .service-contact {
-        justify-content: center;
-      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>تأجير كراسي وطاولات وكنب</h1>
+    <p>تأجير مستلزمات الحفلات والمناسبات في الشرقية</p>
+  </header>
+  <!-- خدماتنا -->
+  <section class="service-section">
+    <h2>تأجير كراسي وطاولات</h2>
+    <p>نقدم خدمات تأجير كراسي وطاولات بجميع الأنواع والأحجام لتناسب حفلات الزفاف، الاجتماعات، والفعاليات الخاصة. تأجير كراسي بلاستيك، كراسي حديد، كراسي ذهبية، وطاولات دائرية وطويلة بأسعار مميزة.</p>
+    <img src="https://i.postimg.cc/Fzg8RR7R/IMG-2299.jpg" alt="تأجير كراسي وطاولات">
+    <div class="contact-buttons">
+      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
+    </div>
+  </section>
 
-<header>
-  <h1>لمسات | تأجير كراسي وطاولات وكنب ومستلزمات الحفلات</h1>
-  <p>أفضل خدمات التأجير للحفلات والمناسبات في المنطقة الشرقية - الدمام، الخبر، الجبيل</p>
-  <div class="contact-icons">
-    <a href="https://wa.me/966559534118" class="whatsapp" target="_blank" title="راسلنا على واتساب">📱</a>
-    <a href="tel:0559534118" class="call" title="اتصل بنا">📞</a>
-  </div>
-</header>
+  <section class="service-section">
+    <h2>تأجير كنب فخم</h2>
+    <p>تأجير كنب فخم لجميع أنواع المناسبات: حفلات، ملكات، مناسبات عائلية. تأجير كنب كلاسيكي، مودرن، وكنب استقبال فاخر. متوفر بجميع الألوان.</p>
+    <img src="https://i.postimg.cc/vBvtx6Lp/46d351d7-91d2-4d35-8424-f4342844f1c6.jpg" alt="تأجير كنب فخم">
+    <div class="contact-buttons">
+      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
+    </div>
+  </section>
 
-<section class="services">
-  <h2>خدمات تأجير مستلزمات الحفلات من لمسات</h2>
+  <section class="service-section">
+    <h2>تأجير خيام ومكيفات</h2>
+    <p>نوفر خدمة تأجير خيام فاخرة وخيام عزاء، مع مكيفات صحراوية ومكيفات متنقلة بأعلى جودة. تأجير خيام تركيب سريع بأسعار مناسبة مع التوصيل لجميع مناطق الشرقية.</p>
+    <img src="https://i.postimg.cc/v8f1Q6tz/IMG-2083.png" alt="تأجير خيام ومكيفات">
+    <div class="contact-buttons">
+      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
+    </div>
+  </section>
 
-  <div class="service-item">
-    <div class="service-text">
-      <h3>1. كنب ملكي مخمل وثلاثي</h3>
-      <p>لمسات تقدم لك أفضل تأجير كنب ملكي فخم ومريح من القماش المخملي عالي الجودة، مناسب للصالات الفخمة والمناسبات الخاصة.</p>
-      <p class="keywords">كلمات مفتاحية: كنب ملكي، كنب مخمل، كنب ثلاثي، تأجير كنب، كنب فاخر، جلسات كنب ملكي، كنب راقي، كنب للمناسبات، كنب تفصيل.</p>
-      <div class="service-contact">
-        <a href="https://wa.me/966559534118" class="whatsapp" target="_blank">واتساب</a>
-        <a href="tel:0559534118" class="call">اتصال مباشر</a>
-      </div>
+  <section class="service-section">
+    <h2>تأجير الجلسات الشعبية</h2>
+    <p>تأجير جلسات شعبية أرضية ومغربية مرتفعة، بألوان وخامات فخمة تناسب جميع المناسبات والضيافات. تأجير جلسات تراثية مع شيلات وسجاد وكوشة عربية.</p>
+    <img src="https://i.postimg.cc/63RdJbQV/b3168f60-5a8a-49be-a705-45da4fcf5726.jpg" alt="تأجير جلسات شعبية">
+    <div class="contact-buttons">
+      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
     </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/280x180?text=كنب+ملكي" alt="كنب ملكي مخمل وثلاثي" />
+  </section>
+  <section class="service-section">
+    <h2>تأجير مكبرات صوت ودي جي</h2>
+    <p>نوفر مكبرات صوت دي جي عالية الجودة وأنظمة صوت بلوتوث متطورة لتوفير أجواء احترافية لحفلاتكم ومناسباتكم الخاصة.</p>
+    <img src="https://i.postimg.cc/QCtnqrmN/30c62dd9-e62e-40b9-9521-0b02920d9691.jpg" alt="مكبرات صوت دي جي" />
+    <div class="contact-buttons">
+      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
     </div>
-  </div>
+  </section>
 
-  <div class="service-item">
-    <div class="service-text">
-      <h3>2. جلسات شعبية مغربية مرتفعة وأرضية</h3>
-      <p>نوفر جلسات شعبية مغربية بأشكال مرتفعة وأرضية مزخرفة، تناسب الحفلات والمناسبات ذات الطابع التراثي.</p>
-      <p class="keywords">كلمات مفتاحية: جلسات شعبية، جلسات مغربية، جلسات مرتفعة، جلسات أرضية، تأجير جلسات، جلسات تراثية، جلسات مناسبة، جلسات مريحة.</p>
-      <div class="service-contact">
-        <a href="https://wa.me/966559534118" class="whatsapp" target="_blank">واتساب</a>
-        <a href="tel:0559534118" class="call">اتصال مباشر</a>
-      </div>
+  <section class="service-section">
+    <h2>تأجير ضيافة قهوجيين وصبابين</h2>
+    <p>خدمات ضيافة مميزة مع قهوجيين وصبابين محترفين لتقديم القهوة والشاي العربي وأفضل أنواع الضيافة لضيوفكم الكرام.</p>
+    <img src="https://i.postimg.cc/2y90KBtP/IMG-2371.jpg" alt="ضيافة قهوجيين وصبابين" />
+    <div class="contact-buttons">
+      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
     </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/280x180?text=جلسات+مغربية" alt="جلسات شعبية مغربية" />
-    </div>
-  </div>
+  </section>
 
-  <div class="service-item">
-    <div class="service-text">
-      <h3>3. خيام جميع أنواعها ومقاساتها</h3>
-      <p>تأجير خيام بجميع أنواعها وأحجامها تناسب الحفلات الصغيرة والكبيرة، مقاومة للعوامل الجوية ومصممة بأجود الخامات.</p>
-      <p class="keywords">كلمات مفتاحية: خيام تأجير، خيام مناسبات، خيام كبيرة، خيام صغيرة، خيام فخمة، خيام مقاومة، خيام حفلات، خيام لجميع المناسبات.</p>
-      <div class="service-contact">
-        <a href="https://wa.me/966559534118" class="whatsapp" target="_blank">واتساب</a>
-        <a href="tel:0559534118" class="call">اتصال مباشر</a>
-      </div>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/280x180?text=خيام" alt="خيام لجميع المناسبات" />
-    </div>
-  </div>
+  <section class="about-us" style="max-width: 900px; margin: 60px auto; padding: 0 20px; color: #222;">
+    <h2>من نحن</h2>
+    <p>تأسست مؤسسة لمسات عام 2013 في المنطقة الشرقية، وهي متخصصة في تأجير مستلزمات الحفلات والمناسبات بكل احترافية. نقدم خدمات متميزة لتلبية كافة احتياجات عملائنا بأعلى جودة وأفضل الأسعار. هدفنا توفير تجربة متكاملة لضيوفكم ومناسباتكم الخاصة.</p>
+    <p>نغطي مناطق الدمام، الخبر، الجبيل، رأس تنورة، والعديد من المدن في المنطقة الشرقية.</p>
+  </section>
 
-  <div class="service-item">
-    <div class="service-text">
-      <h3>4. مكبرات صوت دي جي وبلوتوث</h3>
-      <p>نوفر مكبرات صوت دي جي بجودة عالية وتقنيات بلوتوث حديثة لتغطية صوت مثالي لحفلاتك ومناسباتك.</p>
-      <p class="keywords">كلمات مفتاحية: مكبرات صوت، مكبرات دي جي، مكبرات بلوتوث، مكبر صوت للحفلات، صوت عالي الجودة، مكبرات صوت متنقلة، نظام صوت للحفلات.</p>
-      <div class="service-contact">
-        <a href="https://wa.me/966559534118" class="whatsapp" target="_blank">واتساب</a>
-        <a href="tel:0559534118" class="call">اتصال مباشر</a>
-      </div>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/280x180?text=مكبرات+صوت" alt="مكبرات صوت دي جي وبلوتوث" />
-    </div>
-  </div>
+  <section class="contact-us" style="max-width: 900px; margin: 40px auto; padding: 0 20px; color: #222;">
+    <h2>تواصل معنا</h2>
+    <p>للحجز والاستفسار عن خدمات تأجير مستلزمات الحفلات، يمكنكم التواصل معنا عبر:</p>
+    <ul>
+      <li>واتساب: <a href="https://wa.me/966559534118" target="_blank" style="color:#25D366; font-weight: 700;">0559534118</a></li>
+      <li>الاتصال المباشر: <a href="tel:0559534118" style="color:#007bff; font-weight: 700;">0559534118</a></li>
+      <li>البريد الإلكتروني: <a href="mailto:info@lamsat.com" style="color:#555; font-weight: 700;">info@lamsat.com</a></li>
+    </ul>
+  </section>
 
-  <div class="service-item">
-    <div class="service-text">
-      <h3>5. طاولات مستطيلة ودائرية قزاز وعادي وبوفية وطاولات أكل</h3>
-      <p>نوفر طاولات بأشكال مختلفة: مستطيلة، دائرية، بزجاج أو عادي، تشمل طاولات بوفيه وطاولات طعام لتلبية كل احتياجاتك.</p>
-      <p class="keywords">كلمات مفتاحية: تأجير طاولات، طاولات مستطيلة، طاولات دائرية، طاولات قزاز، طاولات عادي، طاولات بوفيه، طاولات أكل، طاولات للمناسبات.</p>
-      <div class="service-contact">
-        <a href="https://wa.me/966559534118" class="whatsapp" target="_blank">واتساب</a>
-        <a href="tel:0559534118" class="call">اتصال مباشر</a>
-      </div>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/280x180?text=طاولات" alt="طاولات مستطيلة ودائرية" />
-    </div>
-  </div>
-
-  <div class="service-item">
-    <div class="service-text">
-      <h3>6. كراسي عادي وشفاف</h3>
-      <p>تأجير كراسي عادي وشفاف بتصاميم عصرية تناسب الحفلات والمناسبات، مريحة وأنيقة.</p>
-      <p class="keywords">كلمات مفتاحية: تأجير كراسي، كراسي عادي، كراسي شفاف، كراسي حفلات، كراسي مريحة، كراسي عصرية، كراسي للمناسبات.</p>
-      <div class="service-contact">
-        <a href="https://wa.me/966559534118" class="whatsapp" target="_blank">واتساب</a>
-        <a href="tel:0559534118" class="call">اتصال مباشر</a>
-      </div>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/280x180?text=كراسي" alt="كراسي عادي وشفاف" />
-    </div>
-  </div>
-
-  <div class="service-item">
-    <div class="service-text">
-      <h3>7. ضيافة قهوجيين وصبابين</h3>
-      <p>نوفر خدمات ضيافة مميزة مع قهوجيين وصبابين محترفين لتقديم أفضل تجربة لضيوفك في المناسبات.</p>
-      <p class="keywords">كلمات مفتاحية: ضيافة قهوجيين، ضيافة صبابين، خدمة ضيافة، تقديم القهوة، تقديم الشاي، قهوة عربية، خدمات مناسبات، ضيافة احترافية.</p>
-      <div class="service-contact">
-        <a href="https://wa.me/966559534118" class="whatsapp" target="_blank">واتساب</a>
-        <a href="tel:0559534118" class="call">اتصال مباشر</a>
-      </div>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/280x180?text=ضيافة" alt="ضيافة قهوجيين وصبابين" />
-    </div>
-  </div>
-
-  <div class="service-item">
-    <div class="service-text">
-      <h3>8. مكيفات صحراوي وسبريت</h3>
-      <p>تأجير مكيفات صحراوي وسبريت بأنواع وأحجام مختلفة تناسب الهواء المفتوح والمغلق في الحفلات والمناسبات.</p>
-      <p class="keywords">كلمات مفتاحية: تأجير مكيفات، مكيف صحراوي، مكيف سبريت، مكيفات للمناسبات، مكيفات الهواء، مكيفات كبيرة، مكيفات للحفلات.</p>
-      <div class="service-contact">
-        <a href="https://wa.me/966559534118" class="whatsapp" target="_blank">واتساب</a>
-        <a href="tel:0559534118" class="call">اتصال مباشر</a>
-      </div>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/280x180?text=مكيفات" alt="مكيفات صحراوي وسبريت" />
-    </div>
-  </div>
-
-</section>
-
-<footer>
-  &copy; 2025 مؤسسة لمسات لتأجير مستلزمات الحفلات والمناسبات. جميع الحقوق محفوظة.
-</footer>
+  <footer style="text-align:center; padding: 20px; background: #111; color: #bbb; font-size: 14px;">
+    &copy; 2025 مؤسسة لمسات لتأجير مستلزمات الحفلات والمناسبات. جميع الحقوق محفوظة.
+  </footer>
 
 </body>
 </html>
