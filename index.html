@@ -2,10 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>تأجير كراسي وطاولات وكنب | لمسات</title>
-  <meta name="description" content="لمسات لتأجير مستلزمات الحفلات - تأجير كراسي وطاولات وكنب وخيام ومكيفات وجلسات شعبية وسجاد وسماعات. أفضل الخدمات في الشرقية والدمام والخبر والجبيل.">
-  <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, تأجير خيام, تأجير جلسات, تأجير سجاد, تأجير مكيفات, تأجير سماعات, مستلزمات حفلات, لمسات الشرقية">
+  <meta name="description" content="لمسات لتأجير مستلزمات الحفلات - تأجير كراسي وطاولات وكنب وخيام ومكيفات وجلسات شعبية وسجاد وسماعات. أفضل الخدمات في الشرقية والدمام والخبر والجبيل." />
+  <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, تأجير خيام, تأجير جلسات, تأجير سجاد, تأجير مكيفات, تأجير سماعات, مستلزمات حفلات, لمسات الشرقية" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     body {
@@ -13,136 +13,237 @@
       font-family: 'Tajawal', sans-serif;
       background-color: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: linear-gradient(to left, #7e57c2, #ab47bc);
+      background: linear-gradient(to left, rgba(126, 87, 194, 0.8), rgba(171, 71, 188, 0.8)), url('https://i.postimg.cc/kXBd7YGF/IMG-2564.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px 50px;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
     }
     header h1 {
-      font-size: 30px;
-      margin: 0;
+      font-size: 36px;
+      margin: 0 0 15px;
+      font-weight: 900;
     }
     header p {
-      font-size: 18px;
-      margin-top: 10px;
+      font-size: 20px;
+      margin: 0;
     }
     .service-section {
-      padding: 30px 20px;
-      background-color: #fff;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      background: white;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 25px 20px;
+    }
+    .service-section h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #4b2c83;
+    }
+    .service-section p {
+      font-size: 17px;
+      color: #444;
+      margin-bottom: 15px;
     }
     .service-section img {
-      max-width: 100%;
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
       border-radius: 10px;
-      margin-top: 15px;
+      margin-bottom: 15px;
     }
     .contact-buttons {
-      margin-top: 15px;
+      display: flex;
+      gap: 15px;
     }
     .contact-buttons a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-decoration: none;
-      margin-left: 10px;
-      font-size: 20px;
+      font-weight: 700;
       color: white;
-      padding: 10px 15px;
+      font-size: 18px;
+      padding: 12px 0;
       border-radius: 50px;
+      transition: background-color 0.3s ease;
+    }
+    .contact-buttons a i {
+      margin-left: 8px;
+      font-size: 22px;
     }
     .whatsapp {
       background-color: #25D366;
     }
+    .whatsapp:hover {
+      background-color: #1ebe57;
+    }
     .call {
       background-color: #007bff;
+    }
+    .call:hover {
+      background-color: #0056b3;
+    }
+    section.about-us, section.contact-us {
+      max-width: 900px;
+      margin: 60px auto 40px;
+      background: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      color: #222;
+    }
+    section.about-us h2, section.contact-us h2 {
+      color: #4b2c83;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    section.about-us p, section.contact-us p, section.contact-us ul {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #444;
+    }
+    section.contact-us ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+    section.contact-us ul li {
+      margin-bottom: 8px;
+    }
+    section.contact-us a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    section.contact-us a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #bbb;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    @media (max-width: 720px) {
+      header h1 {
+        font-size: 28px;
+      }
+      header p {
+        font-size: 16px;
+      }
+      .service-section h2 {
+        font-size: 24px;
+      }
+      .contact-buttons {
+        flex-direction: column;
+      }
+      .contact-buttons a {
+        font-size: 20px;
+        padding: 14px 0;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>تأجير كراسي وطاولات وكنب</h1>
-    <p>تأجير مستلزمات الحفلات والمناسبات في الشرقية</p>
-  </header>
-  <!-- خدماتنا -->
-  <section class="service-section">
-    <h2>تأجير كراسي وطاولات</h2>
-    <p>نقدم خدمات تأجير كراسي وطاولات بجميع الأنواع والأحجام لتناسب حفلات الزفاف، الاجتماعات، والفعاليات الخاصة. تأجير كراسي بلاستيك، كراسي حديد، كراسي ذهبية، وطاولات دائرية وطويلة بأسعار مميزة.</p>
-    <img src="https://i.postimg.cc/Fzg8RR7R/IMG-2299.jpg" alt="تأجير كراسي وطاولات">
-    <div class="contact-buttons">
-      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </section>
 
-  <section class="service-section">
-    <h2>تأجير كنب فخم</h2>
-    <p>تأجير كنب فخم لجميع أنواع المناسبات: حفلات، ملكات، مناسبات عائلية. تأجير كنب كلاسيكي، مودرن، وكنب استقبال فاخر. متوفر بجميع الألوان.</p>
-    <img src="https://i.postimg.cc/vBvtx6Lp/46d351d7-91d2-4d35-8424-f4342844f1c6.jpg" alt="تأجير كنب فخم">
-    <div class="contact-buttons">
-      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </section>
+<header>
+  <h1>لمسات | تأجير كراسي وطاولات وكنب ومستلزمات الحفلات</h1>
+  <p>أفضل خدمات التأجير للحفلات والمناسبات في المنطقة الشرقية - الدمام، الخبر، الجبيل</p>
+</header>
 
-  <section class="service-section">
-    <h2>تأجير خيام ومكيفات</h2>
-    <p>نوفر خدمة تأجير خيام فاخرة وخيام عزاء، مع مكيفات صحراوية ومكيفات متنقلة بأعلى جودة. تأجير خيام تركيب سريع بأسعار مناسبة مع التوصيل لجميع مناطق الشرقية.</p>
-    <img src="https://i.postimg.cc/v8f1Q6tz/IMG-2083.png" alt="تأجير خيام ومكيفات">
-    <div class="contact-buttons">
-      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </section>
+<section class="service-section">
+  <h2>تأجير كراسي وطاولات بجميع الأنواع</h2>
+  <p>نوفر تأجير كراسي وطاولات بجميع الأنواع والأحجام، منها كراسي بلاستيك وخشب وكراسي ذهبية فاخرة، وطاولات مستطيلة ودائرية بأفضل الأسعار في المنطقة الشرقية. خدماتنا متاحة للحفلات والمناسبات الرسمية والاجتماعية.</p>
+  <p>كلمات مفتاحية: تأجير كراسي, تأجير طاولات, كراسي بلاستيك, كراسي خشبية, طاولات مستطيلة, طاولات دائرية, حفلات, مناسبات, الشرقية, الدمام, الخبر</p>
+  <img src="https://i.postimg.cc/Fzg8RR7R/IMG-2299.jpg" alt="تأجير كراسي وطاولات" />
+  <div class="contact-buttons">
+    <a href="https://wa.me/966559534118" class="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+    <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
+  </div>
+</section>
 
-  <section class="service-section">
-    <h2>تأجير الجلسات الشعبية</h2>
-    <p>تأجير جلسات شعبية أرضية ومغربية مرتفعة، بألوان وخامات فخمة تناسب جميع المناسبات والضيافات. تأجير جلسات تراثية مع شيلات وسجاد وكوشة عربية.</p>
-    <img src="https://i.postimg.cc/63RdJbQV/b3168f60-5a8a-49be-a705-45da4fcf5726.jpg" alt="تأجير جلسات شعبية">
-    <div class="contact-buttons">
-      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </section>
-  <section class="service-section">
-    <h2>تأجير مكبرات صوت ودي جي</h2>
-    <p>نوفر مكبرات صوت دي جي عالية الجودة وأنظمة صوت بلوتوث متطورة لتوفير أجواء احترافية لحفلاتكم ومناسباتكم الخاصة.</p>
-    <img src="https://i.postimg.cc/QCtnqrmN/30c62dd9-e62e-40b9-9521-0b02920d9691.jpg" alt="مكبرات صوت دي جي" />
-    <div class="contact-buttons">
-      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </section>
+<section class="service-section">
+  <h2>تأجير كنب فخم ومريح</h2>
+  <p>تأجير كنب فاخر ومريح من مختلف الأنواع الكلاسيكية والمودرن لتناسب حفلاتكم ومناسباتكم الخاصة. نوفر كنبات بجودة عالية وألوان متعددة تناسب جميع الأذواق.</p>
+  <p>كلمات مفتاحية: تأجير كنب, كنب فاخر, كنب مودرن, كنب كلاسيكي, جلسات كنب, مناسبات, حفلات, الشرقية</p>
+  <img src="https://i.postimg.cc/vBvtx6Lp/46d351d7-91d2-4d35-8424-f4342844f1c6.jpg" alt="تأجير كنب فخم" />
+  <div class="contact-buttons">
+    <a href="https://wa.me/966559534118" class="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+    <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
+  </div>
+</section>
 
-  <section class="service-section">
-    <h2>تأجير ضيافة قهوجيين وصبابين</h2>
-    <p>خدمات ضيافة مميزة مع قهوجيين وصبابين محترفين لتقديم القهوة والشاي العربي وأفضل أنواع الضيافة لضيوفكم الكرام.</p>
-    <img src="https://i.postimg.cc/2y90KBtP/IMG-2371.jpg" alt="ضيافة قهوجيين وصبابين" />
-    <div class="contact-buttons">
-      <a class="whatsapp" href="https://wa.me/966559534118" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
-      <a class="call" href="tel:0559534118"><i class="fas fa-phone-alt"></i> اتصال</a>
-    </div>
-  </section>
+<section class="service-section">
+  <h2>تأجير خيام فاخرة ومكيفات صحراوية</h2>
+  <p>خدمات تأجير خيام فاخرة لجميع المناسبات بأنواع وأحجام مختلفة، مع توفير مكيفات صحراوية وسبريت بأنواع متعددة لضمان راحة ضيوفك في أي مكان. التوصيل والتركيب متوفر لجميع مناطق الشرقية.</p>
+  <p>كلمات مفتاحية: تأجير خيام, خيام فاخرة, مكيفات صحراوية, مكيفات سبريت, تأجير مكيفات, مناسبات, حفلات, الشرقية</p>
+  <img src="https://i.postimg.cc/v8f1Q6tz/IMG-2083.png" alt="تأجير خيام ومكيفات" />
+  <div class="contact-buttons">
+    <a href="https://wa.me/966559534118" class="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+    <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
+  </div>
+</section>
 
-  <section class="about-us" style="max-width: 900px; margin: 60px auto; padding: 0 20px; color: #222;">
-    <h2>من نحن</h2>
-    <p>تأسست مؤسسة لمسات عام 2013 في المنطقة الشرقية، وهي متخصصة في تأجير مستلزمات الحفلات والمناسبات بكل احترافية. نقدم خدمات متميزة لتلبية كافة احتياجات عملائنا بأعلى جودة وأفضل الأسعار. هدفنا توفير تجربة متكاملة لضيوفكم ومناسباتكم الخاصة.</p>
-    <p>نغطي مناطق الدمام، الخبر، الجبيل، رأس تنورة، والعديد من المدن في المنطقة الشرقية.</p>
-  </section>
+<section class="service-section">
+  <h2>تأجير جلسات شعبية مغربية وأرضية</h2>
+  <p>نوفر جلسات شعبية مغربية مرتفعة وأرضية مزخرفة بأقمشة وسجاد فخم لتناسب حفلات الضيافة والمناسبات الخاصة، مع تأمين جميع المستلزمات التراثية اللازمة.</p>
+  <p>كلمات مفتاحية: تأجير جلسات, جلسات شعبية, جلسات مغربية, جلسات أرضية, سجاد, ضيافة, حفلات, مناسبات, الشرقية</p>
+  <img src="https://i.postimg.cc/63RdJbQV/b3168f60-5a8a-49be-a705-45da4fcf5726.jpg" alt="تأجير جلسات شعبية" />
+  <div class="contact-buttons">
+    <a href="https://wa.me/966559534118" class="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+    <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
+  </div>
+</section>
 
-  <section class="contact-us" style="max-width: 900px; margin: 40px auto; padding: 0 20px; color: #222;">
-    <h2>تواصل معنا</h2>
-    <p>للحجز والاستفسار عن خدمات تأجير مستلزمات الحفلات، يمكنكم التواصل معنا عبر:</p>
-    <ul>
-      <li>واتساب: <a href="https://wa.me/966559534118" target="_blank" style="color:#25D366; font-weight: 700;">0559534118</a></li>
-      <li>الاتصال المباشر: <a href="tel:0559534118" style="color:#007bff; font-weight: 700;">0559534118</a></li>
-      <li>البريد الإلكتروني: <a href="mailto:info@lamsat.com" style="color:#555; font-weight: 700;">info@lamsat.com</a></li>
-    </ul>
-  </section>
+<section class="service-section">
+  <h2>تأجير مكبرات صوت وأنظمة دي جي</h2>
+  <p>نوفر أفضل مكبرات صوت وأنظمة دي جي لتوفير أجواء احترافية لحفلاتكم ومناسباتكم الخاصة، مع أنظمة صوت متطورة ذات جودة عالية وصوت نقي.</p>
+  <p>كلمات مفتاحية: تأجير مكبرات صوت, دي جي, أنظمة صوت, حفلات, مناسبات, الشرقية</p>
+  <img src="https://i.postimg.cc/QCtnqrmN/30c62dd9-e62e-40b9-9521-0b02920d9691.jpg" alt="مكبرات صوت دي جي" />
+  <div class="contact-buttons">
+    <a href="https://wa.me/966559534118" class="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+    <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
+  </div>
+</section>
 
-  <footer style="text-align:center; padding: 20px; background: #111; color: #bbb; font-size: 14px;">
-    &copy; 2025 مؤسسة لمسات لتأجير مستلزمات الحفلات والمناسبات. جميع الحقوق محفوظة.
-  </footer>
+<section class="service-section">
+  <h2>تأجير ضيافة قهوجيين وصبابين محترفين</h2>
+  <p>نقدم خدمات ضيافة متميزة مع قهوجيين وصبابين محترفين لتقديم القهوة والشاي العربي بأفضل الطرق، مما يضيف رونقاً خاصاً لضيوفكم الكرام في كل مناسبة.</p>
+  <p>كلمات مفتاحية: ضيافة, قهوجيين, صبابين, تقديم القهوة, شاي عربي, مناسبات, حفلات, الشرقية</p>
+  <img src="https://i.postimg.cc/2y90KBtP/IMG-2371.jpg" alt="ضيافة قهوجيين وصبابين" />
+  <div class="contact-buttons">
+    <a href="https://wa.me/966559534118" class="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+    <a href="tel:0559534118" class="call"><i class="fas fa-phone-alt"></i> اتصال</a>
+  </div>
+</section>
+
+<section class="about-us">
+  <h2>من نحن</h2>
+  <p>مؤسسة لمسات تأسست عام 2013 في المنطقة الشرقية لتكون رائدة في مجال تأجير مستلزمات الحفلات والمناسبات. نتميز بجودة خدماتنا وتوفير كل ما يحتاجه عملاؤنا من تجهيزات بأفضل الأسعار وبسرعة واحترافية عالية.</p>
+  <p>نغطي كامل مناطق الدمام، الخبر، الجبيل، رأس تنورة، ومناطق أخرى في الشرقية لنقدم لك تجربة متكاملة ومريحة.</p>
+</section>
+
+<section class="contact-us">
+  <h2>تواصل معنا</h2>
+  <p>للحجز أو الاستفسار عن أي خدمة من خدمات تأجير مستلزمات الحفلات، تواصل معنا عبر الوسائل التالية:</p>
+  <ul>
+    <li>واتساب: <a href="https://wa.me/966559534118" target="_blank" rel="noopener" style="color:#25D366;">0559534118</a></li>
+    <li>اتصال مباشر: <a href="tel:0559534118" style="color:#007bff;">0559534118</a></li>
+    <!-- <li>بريد إلكتروني: <a href="mailto:info@lamsat.com" style="color:#555;">info@lamsat.com</a></li> -->
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 مؤسسة لمسات لتأجير مستلزمات الحفلات والمناسبات. جميع الحقوق محفوظة.
+</footer>
 
 </body>
 </html>
