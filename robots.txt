@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.lamasat7.com/sitemap.xml
+Host: www.lamasat7.com
